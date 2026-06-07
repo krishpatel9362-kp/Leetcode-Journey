@@ -29,7 +29,7 @@ This often improves the time complexity from O(n²) to O(n).
 
 ## Key Takeaways
 
-167 - Two Sum II
+## 167 - Two Sum II
 
 - Brute force checks every pair and takes O(n²).
 - Since the array is sorted, two pointers can be used.
@@ -38,13 +38,24 @@ This often improves the time complexity from O(n²) to O(n).
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 
-1 - Segregate 0s and 1s
+## 1 - Segregate 0s and 1s
 
 - Brute force can count the number of 0s and fill the array accordingly.
 - Since only two distinct values exist, the array can be partitioned using two pointers.
 - The left pointer searches for misplaced 1s.
 - The right pointer marks where 1s should be placed.
 - Swapping gradually moves all 0s to the left and all 1s to the right.
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+## 26 - Remove Duplicates from Sorted Array
+
+- Brute force can use an additional array or collection to store unique values.
+- Since the array is sorted, duplicate values will always be adjacent.
+- One pointer keeps track of the last unique element.
+- Another pointer scans the array looking for new unique values.
+- When a new unique value is found, it is placed immediately after the unique section.
+- The length of the unique section is returned as the answer.
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 
