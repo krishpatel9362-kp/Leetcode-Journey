@@ -1,6 +1,7 @@
 /*
 Problem: 167. Two Sum II - Input Array Is Sorted
 Pattern: Two Pointers
+Link : https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 
 Description:
 Given a sorted array of integers and a target value,
