@@ -36,3 +36,14 @@ This often improves the time complexity from O(n²) to O(n).
 - If the sum is too large, move the right pointer.
 - Time Complexity: O(n)
 - Space Complexity: O(1)
+
+1 - Segregate 0s and 1s
+
+- Brute force can count the number of 0s and fill the array accordingly.
+- Since only two distinct values exist, the array can be partitioned using two pointers.
+- The left pointer searches for misplaced 1s.
+- The right pointer marks where 1s should be placed.
+- Swapping gradually moves all 0s to the left and all 1s to the right.
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
