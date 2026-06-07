@@ -59,3 +59,10 @@ This often improves the time complexity from O(n²) to O(n).
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 
+### What I Learned
+
+- Sorted arrays often allow duplicates to be processed in a single pass.
+- Two pointers do not always start from opposite ends.
+- One pointer can act as a write position while the other acts as a scanning pointer.
+- This pattern appears in many in-place array modification problems.
+
