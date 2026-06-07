@@ -25,6 +25,7 @@ This often improves the time complexity from O(n²) to O(n).
 | # | Problem | Difficulty |
 |---|---------|------------|
 | 167 | Two Sum II - Input Array Is Sorted | Medium |
+| 1 | Segregate 0s and 1s | Easy |
 
 ## Key Takeaways
 
