@@ -26,6 +26,9 @@ This often improves the time complexity from O(n²) to O(n).
 |---|---------|------------|
 | 167 | Two Sum II - Input Array Is Sorted | Medium |
 | 1 | Segregate 0s and 1s | Easy |
+| 26 | Remove Duplicates from Sorted Array | Easy |
+| 80 | Remove Duplicates from Sorted Array II | Medium |
+
 
 ## Key Takeaways
 
@@ -59,10 +62,25 @@ This often improves the time complexity from O(n²) to O(n).
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 
+## 80 - Remove Duplicates from Sorted Array II
+
+- Brute force can use an additional array or collection to store valid elements.
+- Since the array is sorted, duplicate values appear consecutively.
+- One pointer keeps track of where the next valid element should be placed.
+- Another pointer scans the array from left to right.
+- The first duplicate is allowed, but any additional duplicates are skipped.
+- A flag can be used to track whether a duplicate has already been accepted.
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
 ## What I Learned
 
 - Sorted arrays often allow duplicates to be processed in a single pass.
 - Two pointers do not always start from opposite ends.
 - One pointer can act as a write position while the other acts as a scanning pointer.
 - This pattern appears in many in-place array modification problems.
+- Two pointer problems can involve controlling how many duplicates are allowed.
+- Sorted arrays make it easier to detect duplicate groups.
+- A write pointer and a scan pointer are a common pattern for in-place array modification.
+- Additional state variables can be combined with two pointers to enforce custom rules.
 
