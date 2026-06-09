@@ -28,6 +28,7 @@ This often improves the time complexity from O(n²) to O(n).
 | 1 | Segregate 0s and 1s | Easy |
 | 26 | Remove Duplicates from Sorted Array | Easy |
 | 80 | Remove Duplicates from Sorted Array II | Medium |
+| 977 | Squares of a Sorted Array | Easy |
 
 
 ## Key Takeaways
@@ -73,6 +74,18 @@ This often improves the time complexity from O(n²) to O(n).
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 
+## 977 - Squares of a Sorted Array
+
+- Brute force squares every element and then sorts the result.
+- Squaring negative numbers can change their relative order.
+- The original sorted array can be viewed as two sorted sections:
+  negative values and non-negative values.
+- After converting negatives to absolute values, the problem becomes
+  similar to merging two sorted arrays.
+- Two pointers can efficiently merge the two sections into the answer.
+- Time Complexity: O(n)
+- Space Complexity: O(n)
+
 ## What I Learned
 
 - Sorted arrays often allow duplicates to be processed in a single pass.
@@ -83,4 +96,8 @@ This often improves the time complexity from O(n²) to O(n).
 - Sorted arrays make it easier to detect duplicate groups.
 - A write pointer and a scan pointer are a common pattern for in-place array modification.
 - Additional state variables can be combined with two pointers to enforce custom rules.
+- Two pointers can be used for merging, not just for searching.
+- A sorted array may contain hidden sorted subarrays that can be exploited.
+- Transforming the problem can reveal a familiar pattern.
+- Sometimes avoiding a sort operation leads to a linear-time solution.
 
