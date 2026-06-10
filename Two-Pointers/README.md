@@ -29,6 +29,7 @@ This often improves the time complexity from O(n²) to O(n).
 | 26 | Remove Duplicates from Sorted Array | Easy |
 | 80 | Remove Duplicates from Sorted Array II | Medium |
 | 977 | Squares of a Sorted Array | Easy |
+| 15 | 3Sum | Medium |
 
 
 ## Key Takeaways
@@ -86,6 +87,17 @@ This often improves the time complexity from O(n²) to O(n).
 - Time Complexity: O(n)
 - Space Complexity: O(n)
 
+## 15 - 3Sum
+
+- Brute force checks every possible triplet and takes O(n³).
+- Sorting the array enables the use of the Two Pointers pattern.
+- Fix one element and reduce the problem to a Two Sum search.
+- Use left and right pointers to find pairs that complete the triplet.
+- Skip duplicate values for the fixed element and the two pointers to avoid duplicate triplets.
+- Sorting transforms an O(n³) problem into an O(n²) solution.
+- Time Complexity: O(n²)
+- Space Complexity: O(1) (excluding output storage)
+
 ## What I Learned
 
 - Sorted arrays often allow duplicates to be processed in a single pass.
@@ -100,4 +112,9 @@ This often improves the time complexity from O(n²) to O(n).
 - A sorted array may contain hidden sorted subarrays that can be exploited.
 - Transforming the problem can reveal a familiar pattern.
 - Sometimes avoiding a sort operation leads to a linear-time solution.
+- Many Three Sum problems can be reduced to a Two Sum problem after sorting.
+- Two Pointers can be nested inside a loop to solve more complex problems.
+- Handling duplicates is often as important as finding the correct values.
+- Sorting can reveal patterns that are difficult to see in an unsorted array.
+- A common interview technique is to fix one value and search for the remaining values.
 
