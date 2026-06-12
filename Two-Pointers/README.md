@@ -31,6 +31,8 @@ This often improves the time complexity from O(n²) to O(n).
 | 977 | Squares of a Sorted Array | Easy |
 | 15 | 3Sum | Medium |
 | 16 | 3Sum Closest | Medium |
+| 1 | Triplets with Smaller Sum | Medium |
+
 
 ## Key Takeaways
 
@@ -109,6 +111,17 @@ This often improves the time complexity from O(n²) to O(n).
 - Time Complexity: O(n²)
 - Space Complexity: O(1)
 
+## 1 - Triplets with Smaller Sum
+
+- Brute force checks every possible triplet and takes O(n³).
+- Sorting the array enables the use of the Two Pointers pattern.
+- Fix one element and search for valid pairs using left and right pointers.
+- If the current triplet sum is smaller than X, all elements between left and right also form valid triplets.
+- Count multiple triplets at once using (right - left) instead of checking each individually.
+- This counting trick reduces the complexity from O(n³) to O(n²).
+- Time Complexity: O(n²)
+- Space Complexity: O(1)
+
 ## What I Learned
 
 - Sorted arrays often allow duplicates to be processed in a single pass.
@@ -133,4 +146,9 @@ This often improves the time complexity from O(n²) to O(n).
 - Sorting often transforms a brute-force triplet problem into an O(n²) solution.
 - Comparing differences using Math.abs() is useful when looking for the closest value.
 - 3Sum Closest is a variation of 3Sum that focuses on optimization rather than exact equality.
+- Two Pointers can be used for counting problems, not just searching problems.
+- Sorting allows us to make conclusions about entire ranges of elements.
+- Sometimes one valid condition can represent many valid answers.
+- Counting groups of solutions at once is a common optimization technique.
+- Recognizing when (right - left) answers multiple cases is an important interview pattern.
 
