@@ -30,7 +30,7 @@ This often improves the time complexity from O(n²) to O(n).
 | 80 | Remove Duplicates from Sorted Array II | Medium |
 | 977 | Squares of a Sorted Array | Easy |
 | 15 | 3Sum | Medium |
-
+| 16 | 3Sum Closest | Medium |
 
 ## Key Takeaways
 
@@ -98,6 +98,17 @@ This often improves the time complexity from O(n²) to O(n).
 - Time Complexity: O(n²)
 - Space Complexity: O(1) (excluding output storage)
 
+## 16 - 3Sum Closest
+
+- Brute force checks every possible triplet and takes O(n³).
+- Sorting the array enables the use of the Two Pointers pattern.
+- Fix one element and use two pointers to search for the best pair.
+- Instead of finding an exact target, keep track of the closest sum found so far.
+- Update the answer whenever a triplet produces a smaller difference from the target.
+- If the exact target is found, return immediately.
+- Time Complexity: O(n²)
+- Space Complexity: O(1)
+
 ## What I Learned
 
 - Sorted arrays often allow duplicates to be processed in a single pass.
@@ -117,4 +128,9 @@ This often improves the time complexity from O(n²) to O(n).
 - Handling duplicates is often as important as finding the correct values.
 - Sorting can reveal patterns that are difficult to see in an unsorted array.
 - A common interview technique is to fix one value and search for the remaining values.
+- Two Pointers can be used for optimization problems, not just exact matches.
+- Tracking the best answer seen so far is a common interview technique.
+- Sorting often transforms a brute-force triplet problem into an O(n²) solution.
+- Comparing differences using Math.abs() is useful when looking for the closest value.
+- 3Sum Closest is a variation of 3Sum that focuses on optimization rather than exact equality.
 
