@@ -6,7 +6,7 @@ This repository contains my LeetCode solutions organized by problem-solving patt
 
 | Pattern | Problems Solved |
 |----------|----------------|
-| Two Pointers | 6 |
+| Two Pointers | 8 |
 
 ## Patterns
 
